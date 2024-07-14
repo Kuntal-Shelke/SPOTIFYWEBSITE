@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone Website</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .main {
+            display: grid;
+            grid-template-columns: 22% 78%;
+            height: 100vh;
+        }
+        
+        .left {
+            margin-right: 4px;
+            display: grid;
+            grid-template-rows: 24% 76%;
+        }
+        
+        .right {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            margin-left: 4px;
+        }
+        
+        .above {
+            border-radius: 9px;
+            background-color: rgb(20, 20, 20);
+            margin-bottom: 4px;
+        }
+        
+        .below {
+            border-radius: 9px;
+            background-color: rgb(20, 20, 20);
+            margin-top: 4px;
+        }
+        
+        .aboveright {
+            background-color: rgb(20, 20, 20);
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .belowright {
+            background-color: rgb(28, 27, 27);
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+        
+        #btn1 {
+            /* background-color: #1DB954; */
+            background-color: white;
+            border-radius: 50px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: none;
+            margin-top: 10.5px;
+            text-align: center;
+            margin-right: 25px;
+        }
+        
+        #btn1:hover {
+            transform: scale(1.05);
+        }
+        
+        .sign {
+            text-decoration: none;
+            font-size: 17px;
+            color: rgb(178, 175, 175);
+            margin-right: 22px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .sign:hover {
+            color: white;
+        }
+        
+        .a1 {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="above">
+
+            </div>
+            <div class="below">
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="aboveright">
+                <div class="sign">
+                    <p>Hello</p>
+                </div>
+                <div class="join">
+                    <a class="sign" href="#">Sign up</a>
+                    <button id="btn1"> <a class="a1" href="#">Log in</a></button>
+
+                </div>
+            </div>
+            <div class="belowright">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
