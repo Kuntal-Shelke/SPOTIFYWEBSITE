@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone Website</title>
+    <link rel="shortcut icon" href="C:\Users\Hp\Desktop\SpotifyWebsite\images\images.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/425d493a84.js" crossorigin="anonymous">
+    </script>
     <style>
         body {
             background-color: black;
@@ -12,19 +15,19 @@
         
         .main {
             display: grid;
-            grid-template-columns: 22% 78%;
+            grid-template-columns: 24% 76%;
             height: 100vh;
         }
         
         .left {
             margin-right: 4px;
             display: grid;
-            grid-template-rows: 24% 76%;
+            grid-template-rows: 26% 74%;
         }
         
         .right {
             display: grid;
-            grid-template-rows: 10% 90%;
+            grid-template-rows: 11% 91%;
             margin-left: 4px;
         }
         
@@ -41,7 +44,7 @@
         }
         
         .aboveright {
-            background-color: rgb(20, 20, 20);
+            background-color: rgb(19, 17, 17);
             border-top-left-radius: 9px;
             border-top-right-radius: 9px;
             display: flex;
@@ -62,7 +65,7 @@
             padding-left: 20px;
             padding-right: 20px;
             border: none;
-            margin-top: 10.5px;
+            margin-top: 13.5px;
             text-align: center;
             margin-right: 25px;
         }
@@ -91,13 +94,63 @@
             font-weight: bolder;
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+        #image {
+            height: 40px;
+            margin: 10px 0px 0px 20px;
+        }
+        
+        .item {
+            height: 40%;
+            width: 20%;
+            background-color: red;
+        }
+        
+        .artist {
+            margin-bottom: 50px;
+            border-radius: 50%;
+            height: 90%;
+            width: 90%;
+            padding: 10px;
+        }
+        
+        #artist {
+            display: flex;
+        }
+        
+        .fa-solid {
+            color: rgb(151, 148, 148);
+            background-color: black;
+            padding: 9px;
+            border-radius: 50%;
+            margin-top: 16px;
+            margin-left: 3px;
+        }
+        
+        .fa-solid:hover {
+            color: white;
+        }
+        
+        .Popularartist {
+            color: white;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+        
+        .Popularartist:hover {
+            text-decoration: underline;
+        }
     </style>
+
 </head>
 
 <body>
     <div class="main">
         <div class="left">
             <div class="above">
+                <!-- <img id="image" src="C:\Users\Hp\Desktop\SpotifyWebsite\images\logotitle.png"> -->
 
             </div>
             <div class="below">
@@ -106,8 +159,9 @@
         </div>
         <div class="right">
             <div class="aboveright">
-                <div class="sign">
-                    <p>Hello</p>
+                <div class="symbol">
+                    <i class="fa-solid fa-less-than" style="margin-left: 20px;"></i>
+                    <i class="fa-solid fa-greater-than"></i>
                 </div>
                 <div class="join">
                     <a class="sign" href="#">Sign up</a>
@@ -116,7 +170,31 @@
                 </div>
             </div>
             <div class="belowright">
+                <div id="heading">
+                    <b><h1 class="Popularartist" > Popular artist</h2>
+                     </b>
+                </div>
+                <div id="artist">
 
+                    <div class="item" style="background-color: rgb(24, 24, 24);">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\pritam.jpeg">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
