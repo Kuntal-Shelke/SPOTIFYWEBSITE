@@ -27,7 +27,7 @@
         
         .right {
             display: grid;
-            grid-template-rows: 11% 91%;
+            grid-template-rows: 5.5% 93.5%;
             margin-left: 4px;
         }
         
@@ -52,13 +52,14 @@
         }
         
         .belowright {
+            padding-top: 20px;
             background-color: rgb(28, 27, 27);
             border-bottom-left-radius: 9px;
             border-bottom-right-radius: 9px;
         }
+        /* Join button id */
         
         #btn1 {
-            /* background-color: #1DB954; */
             background-color: white;
             border-radius: 50px;
             padding: 10px;
@@ -73,6 +74,7 @@
         #btn1:hover {
             transform: scale(1.05);
         }
+        /* for sign up class */
         
         .sign {
             text-decoration: none;
@@ -99,27 +101,38 @@
             height: 40px;
             margin: 10px 0px 0px 20px;
         }
-        
-        .item {
-            height: 40%;
-            width: 20%;
-            background-color: red;
-        }
+        /*class for images */
         
         .artist {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 50%;
-            height: 90%;
-            width: 90%;
+            height: 22vh;
+            width: 10vw;
             padding: 10px;
         }
+        /* id for its child element like item ,img */
         
         #artist {
             display: flex;
+            margin: 20px 0px;
+            /* padding-bottom: 20px; */
+        }
+        /* class for artist image ,artist  name , artist word*/
+        
+        .item {
+            height: 37vh;
+            width: 20%;
+            background-color: rgb(28, 27, 27);
+            padding: 0px 5px;
         }
         
+        .item:hover {
+            background-color: rgb(34, 32, 32);
+        }
+        /*for less or gretar than sign*/
+        
         .fa-solid {
-            color: rgb(151, 148, 148);
+            color: rgb(178, 175, 175);
             background-color: black;
             padding: 9px;
             border-radius: 50%;
@@ -130,6 +143,7 @@
         .fa-solid:hover {
             color: white;
         }
+        /* class for Popular Artist */
         
         .Popularartist {
             color: white;
@@ -137,10 +151,39 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
             font-size: 24px;
+            display: inline;
         }
         
         .Popularartist:hover {
             text-decoration: underline;
+        }
+        /* class nameArtist for Name of Artist */
+        
+        .nameArtist {
+            color: white;
+            position: relative;
+            bottom: 40px;
+            left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        /*class for Artist Word */
+        
+        .Artist {
+            color: rgb(178, 175, 175);
+            position: relative;
+            bottom: 55px;
+            left: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*for albums images*/
+        
+        .album {
+            margin-bottom: 20px;
+            border-radius: 15px;
+            height: 22vh;
+            width: 10vw;
+            padding: 10px;
         }
     </style>
 
@@ -150,7 +193,7 @@
     <div class="main">
         <div class="left">
             <div class="above">
-                <!-- <img id="image" src="C:\Users\Hp\Desktop\SpotifyWebsite\images\logotitle.png"> -->
+                <img id="image" src="images\Spotify.png">
 
             </div>
             <div class="below">
@@ -170,31 +213,153 @@
                 </div>
             </div>
             <div class="belowright">
-                <div id="heading">
-                    <b><h1 class="Popularartist" > Popular artist</h2>
+                <div>
+                    <b><h1 class="Popularartist" >Popular artist</h2>
                      </b>
                 </div>
                 <div id="artist">
-
-                    <div class="item" style="background-color: rgb(24, 24, 24);">
-                        <img class="artist " src="images\pritam.jpeg">
-                    </div>
                     <div class="item">
                         <img class="artist " src="images\pritam.jpeg">
+                        <h4 class="nameArtist">Pritam</h4>
+                        <h5 class="Artist">Artist</h5>
                     </div>
                     <div class="item">
-                        <img class="artist " src="images\pritam.jpeg">
+                        <img class="artist " src="images\arjit.jpeg">
+                        <h4 class="nameArtist">Arijit Singh</h4>
+                        <h5 class="Artist">Artist</h5>
                     </div>
                     <div class="item">
-                        <img class="artist " src="images\pritam.jpeg">
+                        <img class="artist " src="images\A.R.Rahman.jpeg">
+                        <h4 class="nameArtist">A.R. Rahman</h4>
+                        <h5 class="Artist">Artist</h5>
                     </div>
                     <div class="item">
-                        <img class="artist " src="images\pritam.jpeg">
+                        <img class="artist " src="images\sachne.jpeg">
+                        <h4 class="nameArtist">Sachin</h4>
+                        <h5 class="Artist">Artist</h5>
                     </div>
                     <div class="item">
-                        <img class="artist " src="images\pritam.jpeg">
+                        <img class="artist " src="images\anirudh.jpeg">
+                        <h4 class="nameArtist">Anurudh...</h4>
+                        <h5 class="Artist">Artist</h5>
+                    </div>
+                    <div class="item">
+                        <img class="artist " src="images\Vishal.jpeg">
+                        <h4 class="nameArtist">Vishal Mishra</h4>
+                        <h5 class="Artist">Artist</h5>
                     </div>
                 </div>
+                <div>
+                    <b><h1 class="Popularartist" >Popular albums</h2>
+                     </b>
+                </div>
+                <div id="artist">
+                    <div class="item">
+                        <img class="album" src="images\pritam.jpeg">
+                        <h4 class="nameArtist">Ek Tha Raja</h4>
+                        <h5 class="Artist">Badshah</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\arjit.jpeg">
+                        <h4 class="nameArtist">Aashiqui 2</h4>
+                        <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\A.R.Rahman.jpeg">
+                        <h4 class="nameArtist">ANIMAL</h4>
+                        <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\sachne.jpeg">
+                        <h4 class="nameArtist">Sajni (From...</h4>
+                        <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\anirudh.jpeg">
+                        <h4 class="nameArtist">Moosetape</h4>
+                        <h5 class="Artist">Sidhu Moose vala</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\Vishal.jpeg">
+                        <h4 class="nameArtist">Still Rollin</h4>
+                        <h5 class="Artist">Shubh</h5>
+                    </div>
+                </div>
+                <!-- Popular Radios-->
+                <div>
+                    <b><h1 class="Popularartist" >Popular albums</h2>
+                     </b>
+                </div>
+                <div id="artist">
+                    <div class="item">
+                        <img class="album" src="images\pritam.jpeg">
+                        <h4 class="nameArtist">Ek Tha Raja</h4>
+                        <h5 class="Artist">Badshah</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\arjit.jpeg">
+                        <h4 class="nameArtist">Aashiqui 2</h4>
+                        <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\A.R.Rahman.jpeg">
+                        <h4 class="nameArtist">ANIMAL</h4>
+                        <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\sachne.jpeg">
+                        <h4 class="nameArtist">Sajni (From...</h4>
+                        <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\anirudh.jpeg">
+                        <h4 class="nameArtist">Moosetape</h4>
+                        <h5 class="Artist">Sidhu Moose vala</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\Vishal.jpeg">
+                        <h4 class="nameArtist">Still Rollin</h4>
+                        <h5 class="Artist">Shubh</h5>
+                    </div>
+                </div>
+                <!-- -->
+                <div>
+                    <b><h1 class="Popularartist" >Popular albums</h2>
+                 </b>
+                </div>
+                <div id="artist" style="padding-bottom: 50px;">
+                    <div class="item">
+                        <img class="album" src="images\pritam.jpeg">
+                        <h4 class="nameArtist">Ek Tha Raja</h4>
+                        <h5 class="Artist">Badshah</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\arjit.jpeg">
+                        <h4 class="nameArtist">Aashiqui 2</h4>
+                        <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\A.R.Rahman.jpeg">
+                        <h4 class="nameArtist">ANIMAL</h4>
+                        <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\sachne.jpeg">
+                        <h4 class="nameArtist">Sajni (From...</h4>
+                        <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\anirudh.jpeg">
+                        <h4 class="nameArtist">Moosetape</h4>
+                        <h5 class="Artist">Sidhu Moose vala</h5>
+                    </div>
+                    <div class="item">
+                        <img class="album" src="images\Vishal.jpeg">
+                        <h4 class="nameArtist">Still Rollin</h4>
+                        <h5 class="Artist">Shubh</h5>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
