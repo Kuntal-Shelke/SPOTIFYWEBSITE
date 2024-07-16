@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone Website</title>
-    <link rel="shortcut icon" href="C:\Users\Hp\Desktop\SpotifyWebsite\images\images.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images\logotitle.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/425d493a84.js" crossorigin="anonymous">
     </script>
     <style>
@@ -22,7 +22,7 @@
         .left {
             margin-right: 4px;
             display: grid;
-            grid-template-rows: 26% 74%;
+            grid-template-rows: 18% 110%;
         }
         
         .right {
@@ -100,6 +100,148 @@
         #image {
             height: 40px;
             margin: 10px 0px 0px 20px;
+            background-color: white;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+        }
+        
+        #spotify {
+            color: white;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 8px;
+            margin-top: 15px;
+        }
+        
+        .logo {
+            display: flex;
+        }
+        
+        .home,
+        .search {
+            display: flex;
+        }
+        
+        .Homeword,
+        .searchword {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: white;
+            margin-top: 1px;
+            margin-left: 20px;
+        }
+        
+        .Homeword:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        #HomeLink {
+            text-decoration: none;
+            color: white;
+        }
+        /*         
+        #HomeLink:hover {
+            color: white;
+        }
+         */
+        
+        .h,
+        .s {
+            color: white;
+            margin-left: 28px;
+            background-color: rgb(20, 20, 20);
+            font-size: 25px;
+        }
+        
+        .s {
+            margin-top: -11px;
+            color: rgb(178, 175, 175);
+        }
+        
+        .searchword {
+            margin-top: -15.5px;
+            color: rgb(178, 175, 175);
+        }
+        
+        .s:hover {
+            color: White;
+        }
+        
+        .searchword:hover {
+            color: White;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .library {
+            display: flex;
+        }
+        
+        .lib {
+            color: rgb(178, 175, 175);
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left: 28px;
+        }
+        
+        .lib:hover {
+            color: white;
+        }
+        
+        .libraryword {
+            margin-top: 13px;
+            color: rgb(178, 175, 175);
+            font-size: 25px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .libraryword:hover {
+            color: white;
+        }
+        
+        .libraryword::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: -30%;
+            transform: translateY(-60%);
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            opacity: 0;
+            white-space: nowrap;
+            transition: opacity 0.3s;
+            /* margin-left: 10px; */
+            pointer-events: none;
+            font-size: medium;
+        }
+        
+        .libraryword:hover::after {
+            opacity: 1;
+        }
+        
+        #lib {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .plus {
+            color: white;
+            font-size: 35px;
+            margin-top: 8px;
+            margin-right: 15px;
+            color: rgb(178, 175, 175);
+        }
+        
+        .plus:hover {
+            color: white;
+            cursor: pointer;
         }
         /*class for images */
         
@@ -131,7 +273,7 @@
         }
         /*for less or gretar than sign*/
         
-        .fa-solid {
+        .lg {
             color: rgb(178, 175, 175);
             background-color: black;
             padding: 9px;
@@ -140,8 +282,9 @@
             margin-left: 3px;
         }
         
-        .fa-solid:hover {
+        .lg:hover {
             color: white;
+            cursor: pointer;
         }
         /* class for Popular Artist */
         
@@ -185,6 +328,42 @@
             width: 10vw;
             padding: 10px;
         }
+        
+        .footer {
+            background-color: rgb(28, 27, 27);
+            ;
+            height: 15%;
+            display: grid;
+            grid-template-columns: 18% 18% 18% 18% 28%;
+        }
+        
+        #foot {
+            margin: 9px;
+            margin-left: 30px;
+            margin-top: 0;
+            color: white;
+            /* background-color: blue; */
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .foot {
+            margin: 9px;
+            margin-left: 30px;
+            color: rgb(178, 175, 175);
+            font-weight: 100;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: blue; */
+        }
+        
+        .fa-brands {
+            color: white;
+            background-color: rgb(70, 68, 68);
+            padding: 9px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
     </style>
 
 </head>
@@ -193,18 +372,35 @@
     <div class="main">
         <div class="left">
             <div class="above">
-                <img id="image" src="images\Spotify.png">
-
+                <div class="logo">
+                    <img id="image" src="images\logotitle.png">
+                    <h1 id="spotify"> Spotify</h1>
+                </div>
+                <div class="home">
+                    <i class="h fa-solid fa-house"></i>
+                    <h5 class="Homeword"><a href="index.html" id="HomeLink"> Home</a></h5>
+                </div>
+                <div class="search">
+                    <i class="s fa-solid fa-magnifying-glass"></i>
+                    <h5 class="searchword">Search</h5>
+                </div>
             </div>
             <div class="below">
-
+                <div id="lib">
+                    <div class="library">
+                        <i class="lib fa-solid fa-lines-leaning"></i>
+                        <h5 class="libraryword" data-tooltip="Collaps Your Library">Your Library </h5>
+                    </div>
+                    <div class="plus" data-hint="Create Playlist or Folder"><i class="fa-light fa-plus"></i></i>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="right">
             <div class="aboveright">
                 <div class="symbol">
-                    <i class="fa-solid fa-less-than" style="margin-left: 20px;"></i>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <i class="lg fa-solid fa-less-than" style="margin-left: 20px;"></i>
+                    <i class="lg fa-solid fa-greater-than"></i>
                 </div>
                 <div class="join">
                     <a class="sign" href="#">Sign up</a>
@@ -255,111 +451,146 @@
                 </div>
                 <div id="artist">
                     <div class="item">
-                        <img class="album" src="images\pritam.jpeg">
+                        <img class="album" src="images\albumimages\ektharaja.jpeg">
                         <h4 class="nameArtist">Ek Tha Raja</h4>
                         <h5 class="Artist">Badshah</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\arjit.jpeg">
+                        <img class="album" src="images\albumimages\Ashiqui.jpeg">
                         <h4 class="nameArtist">Aashiqui 2</h4>
                         <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\A.R.Rahman.jpeg">
+                        <img class="album" src="images\albumimages\Animal.jpeg">
                         <h4 class="nameArtist">ANIMAL</h4>
                         <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\sachne.jpeg">
+                        <img class="album" src="images\albumimages\sajni.jpeg">
                         <h4 class="nameArtist">Sajni (From...</h4>
                         <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\anirudh.jpeg">
+                        <img class="album" src="images\albumimages\Moos.jpeg">
                         <h4 class="nameArtist">Moosetape</h4>
                         <h5 class="Artist">Sidhu Moose vala</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\Vishal.jpeg">
+                        <img class="album" src="images\albumimages\StillRllin.jpeg">
                         <h4 class="nameArtist">Still Rollin</h4>
                         <h5 class="Artist">Shubh</h5>
                     </div>
                 </div>
                 <!-- Popular Radios-->
                 <div>
-                    <b><h1 class="Popularartist" >Popular albums</h2>
+                    <b><h1 class="Popularartist" >Popular radio</h1>
                      </b>
                 </div>
                 <div id="artist">
                     <div class="item">
-                        <img class="album" src="images\pritam.jpeg">
-                        <h4 class="nameArtist">Ek Tha Raja</h4>
-                        <h5 class="Artist">Badshah</h5>
+                        <img class="album" src="images\radioImages\arijitradio.jpeg">
+                        <h4 class="nameArtist">Arijit Singh Radio</h4>
+                        <h5 class="Artist">with Neha Kakkar,Pritam and more</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\arjit.jpeg">
-                        <h4 class="nameArtist">Aashiqui 2</h4>
-                        <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
+                        <img class="album" src="images\radioImages\udit.jpeg">
+                        <h4 class="nameArtist">Udit Narayan...</h4>
+                        <h5 class="Artist">With Kumar Sanu,Alka Yagnik,....</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\A.R.Rahman.jpeg">
-                        <h4 class="nameArtist">ANIMAL</h4>
-                        <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
+                        <img class="album" src="images\radioImages\ikka.jpeg">
+                        <h4 class="nameArtist">Ikka Radio</h4>
+                        <h5 class="Artist">With Karma, Raga and more</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\sachne.jpeg">
-                        <h4 class="nameArtist">Sajni (From...</h4>
-                        <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
+                        <img class="album" src="images\radioImages\Diljit.jpeg">
+                        <h4 class="nameArtist">Diljit Dosanjh...</h4>
+                        <h5 class="Artist">With Garry Sandhu,Ranjit Bawa</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\anirudh.jpeg">
-                        <h4 class="nameArtist">Moosetape</h4>
-                        <h5 class="Artist">Sidhu Moose vala</h5>
+                        <img class="album" src="images\radioImages\llaiyaraaja.jpeg">
+                        <h4 class="nameArtist">llaiyaraaja Radio</h4>
+                        <h5 class="Artist">With S.Janaki....</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\Vishal.jpeg">
-                        <h4 class="nameArtist">Still Rollin</h4>
-                        <h5 class="Artist">Shubh</h5>
+                        <img class="album" src="images\radioImages\Rahman.jpeg">
+                        <h4 class="nameArtist">A.R.Rahman....</h4>
+                        <h5 class="Artist">With ShankarAniru....</h5>
                     </div>
                 </div>
                 <!-- -->
                 <div>
-                    <b><h1 class="Popularartist" >Popular albums</h2>
+                    <b><h1 class="Popularartist" >Trending Episodes</h1>
                  </b>
                 </div>
                 <div id="artist" style="padding-bottom: 50px;">
                     <div class="item">
-                        <img class="album" src="images\pritam.jpeg">
-                        <h4 class="nameArtist">Ek Tha Raja</h4>
-                        <h5 class="Artist">Badshah</h5>
+                        <img class="album" src="images\TrendingEpisode\welcomeback.jpeg">
+                        <h4 class="nameArtist">Welcome back,....</h4>
+                        <h5 class="Artist">Jun 2021 . 15 min</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\arjit.jpeg">
-                        <h4 class="nameArtist">Aashiqui 2</h4>
-                        <h5 class="Artist">Mithoon,Ankit Tiwari,Jeet Gannguli</h5>
+                        <img class="album" src="images\TrendingEpisode\Rotten.jpeg">
+                        <h4 class="nameArtist">#73: Hotel Of...</h4>
+                        <h5 class="Artist">Jun 2021 . 93 min</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\A.R.Rahman.jpeg">
-                        <h4 class="nameArtist">ANIMAL</h4>
-                        <h5 class="Artist">Manan Bhardwaj ,Vishal Mishra,Jaani</h5>
+                        <img class="album" src="images\TrendingEpisode\anubis.jpeg">
+                        <h4 class="nameArtist">Anubis: God of...</h4>
+                        <h5 class="Artist">Jun 2021 . 16 min</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\sachne.jpeg">
-                        <h4 class="nameArtist">Sajni (From...</h4>
-                        <h5 class="Artist">Ram Sampath,Arjit Singh,Prashant..</h5>
+                        <img class="album" src="images\TrendingEpisode\anubis.jpeg">
+                        <h4 class="nameArtist">Anubis: God of..</h4>
+                        <h5 class="Artist">Jun 2021 . 13 min</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\anirudh.jpeg">
-                        <h4 class="nameArtist">Moosetape</h4>
-                        <h5 class="Artist">Sidhu Moose vala</h5>
+                        <img class="album" src="images\TrendingEpisode\mahabharat.jpeg">
+                        <h4 class="nameArtist">Mahabharata..</h4>
+                        <h5 class="Artist">Apr 2014 . 24 min</h5>
                     </div>
                     <div class="item">
-                        <img class="album" src="images\Vishal.jpeg">
-                        <h4 class="nameArtist">Still Rollin</h4>
-                        <h5 class="Artist">Shubh</h5>
+                        <img class="album" src="images\TrendingEpisode\relaxing.jpeg">
+                        <h4 class="nameArtist">Relaxing Rain...</h4>
+                        <h5 class="Artist">Aug 2019 . 122 min</h5>
                     </div>
                 </div>
+                <div class="footer">
+                    <div class="company">
+                        <h4 id="foot">Company</h4>
+                        <h4 class="foot">About</h4>
+                        <h4 class="foot">Jobs</h4>
+                        <h4 class="foot">For the Record</h4>
+                    </div>
+                    <div class="community">
+                        <h4 id="foot">Communities</h4>
+                        <h4 class="foot">For Artist</h4>
+                        <h4 class="foot">Developers</h4>
+                        <h4 class="foot">Advertising</h4>
+                        <h4 class="foot">Investors</h4>
+                        <h4 class="foot">Vendors</h4>
+                    </div>
+                    <div class="Usefillink">
+                        <h4 id="foot">Useful links</h4>
+                        <h4 class="foot">Support</h4>
+                        <h4 class="foot">Free Mobile App</h4>
 
+                    </div>
+                    <div class="plans">
+                        <h4 id="foot">Spotify Plans</h4>
+                        <h4 class="foot">Premium Duo</h4>
+                        <h4 class="foot">Premium Family</h4>
+                        <h4 class="foot">Premium Student</h4>
+                        <h4 class="foot">Spotify Free</h4>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-instagram" style="margin-left: 100px;"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+
+                </div>
+                <hr>
             </div>
         </div>
     </div>
