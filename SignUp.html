@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - spotify </title>
+    <script src="https://kit.fontawesome.com/425d493a84.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images\logotitle.png" type="image/x-icon">
+
+    <style>
+        * {
+            background-color: black;
+            /* margin: 0; */
+            padding: 0;
+        }
+        
+        .main {
+            background-color: black;
+            width: 20vw;
+            height: 100vh;
+        }
+        
+        #image {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 30px;
+        }
+        
+        #heading {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            margin-top: 15px;
+        }
+        
+        #email {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            margin-top: 10px;
+            display: inline-block;
+            margin-left: -180px;
+        }
+        
+        #textemail {
+            background-color: black;
+            display: block;
+            width: 19vw;
+            height: 30px;
+            margin-top: -9px;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding-left: 8px;
+        }
+        
+        #phone {
+            color: rgb(33, 134, 33);
+            margin-top: 7px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline-block;
+            margin-left: -95px;
+            text-decoration: underline;
+        }
+        
+        #btn {
+            display: block;
+            background-color: rgb(23, 161, 23);
+            color: black;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 7px;
+            padding: 10px;
+            width: 20vw;
+            border: none;
+        }
+        
+        .fa-brands {
+            color: white;
+            background-color: black;
+            margin-right: 70px;
+            height: 15px;
+            width: 15px;
+        }
+        
+        .social {
+            display: block;
+            background-color: black;
+            color: black;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 20vw;
+            border: 1px solid white;
+            color: white;
+            font-weight: bold;
+        }
+        
+        #already {
+            color: rgb(123, 119, 119);
+        }
+        
+        a {
+            color: white;
+        }
+        
+        #footer {
+            color: rgb(123, 119, 119);
+            margin-top: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <img id="image" src="images\logotitle.png">
+            <h1 id="heading">Sign up to start listening</h1>
+            <p id="email">Email address</p>
+            <input type="text" id="textemail" placeholder="name@domain.com">
+            <p id="phone">Use phone number instead</p>
+            <button id="btn">Next</button>
+            <hr style="margin: 30px 0px;">
+            <button class="social"><i class="fa-brands fa-google" style="color: red;"></i>Sign up with Google</button>
+            <button class="social"><i class="fa-brands fa-facebook" style="margin-right: 53px;color: rgb(24, 119, 242);"></i>Sign up with Facebook</button>
+            <button class="social"><i class="fa-brands fa-apple" style="margin-right:79px;color: white;"></i>Sign up with Apple</button>
+            <hr style="margin: 30px 0px;">
+            <p id="already">Already have an account?
+                <a href="LogIn">Log in here.</a>
+
+            </p>
+            <p id="footer" style="padding-bottom:70px;">This site is protected by reCAPTCHA and the google
+                <a href="#" style="color: rgb(123, 119, 119);">Privacy policy</a> and
+                <a href="#" style="color: rgb(123, 119, 119);">Term of services</a> apply.
+            </p>
+        </div>
+    </center>
+</body>
+
+</html>
