@@ -10,15 +10,15 @@
 
     <style>
         * {
-            background-color: black;
+            background-color: rgb(16, 15, 15);
             /* margin: 0; */
             padding: 0;
         }
         
         .main {
-            background-color: rgb(230, 41, 41);
+            background-color: rgb(11, 11, 11);
             width: 40%;
-            height: 170vh;
+            height: 130vh;
         }
         
         #image {
@@ -34,6 +34,7 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
             margin-top: 15px;
+            background-color: rgb(11, 11, 11);
         }
         
         #email {
@@ -71,7 +72,7 @@
             font-weight: bold;
             border-radius: 25px;
             margin-top: 7px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding: 10px;
             width: 20vw;
             border: none;
@@ -99,18 +100,13 @@
             font-weight: bold;
         }
         
-        #already {
+        #account {
             color: rgb(123, 119, 119);
+            background-color: rgb(11, 11, 11);
         }
         
         a {
             color: white;
-        }
-        
-        #footer {
-            color: rgb(123, 119, 119);
-            margin-top: 15px;
-            font-size: 13px;
         }
     </style>
 </head>
@@ -123,18 +119,18 @@
             <button class="social"><i class="fa-brands fa-google" style="color: red;"></i>Sign up with Google</button>
             <button class="social"><i class="fa-brands fa-facebook" style="margin-right: 53px;color: rgb(24, 119, 242);"></i>Sign up with Facebook</button>
             <button class="social"><i class="fa-brands fa-apple" style="margin-right:79px;color: white;"></i>Sign up with Apple</button>
-            <button class="social"><i class="fa-brands fa-apple" style="color: white;margin-top: 2px;"></i>Continue with phone number</button>
-            <hr style="margin: 30px 0px;">
+            <button class="social" style="margin-left: 9px;"><i class="fa-solid fa-phone" style="color: white;margin-top: 2px;margin-right: 19px;"></i>Continue with phone number</button>
+            <hr style="margin: 30px 0px;width: 380px;">
             <p id="email">Email address</p>
             <input type="text" id="textemail" placeholder="Email or Username">
-            <p id="email">Password</p>
+            <p id="email" style="margin-right: 24px;">Password</p>
             <input type="text" id="textemail" placeholder="Password">
             <p id="phone">Use phone number instead</p>
-            <button id="btn">Next</button>
+            <button id="btn">Log in</button>
             <a href="#">Forgot your password?</a>
-            <hr style="margin: 30px 0px;">
-            <p id="already">Already have an account?
-                <a href="LogIn">Log in here.</a>
+            <hr style="margin: 30px 0px;width: 380px;">
+            <p id="account">Don't have an account?
+                <a href="LogIn">Sign up for Spotify</a>
 
             </p>
 
